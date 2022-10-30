@@ -1,0 +1,56 @@
+reactangle(int a, int b);
+lenght(a),breadth(b){...}
+
+
+
+
+
+
+destructor --> can only be one in each class (Destructor overloading is not possible.)
+~classname(){
+	----
+	----
+	----
+};
+1) It's a member function having same name as that of class precedded by a tilde(~) symbol and is executed automatically when obj of class is destroyed.
+
+2) One destructor in class hence can't be overloaded.
+
+3)It can be used deallocate memory(resources) for a object.
+
+4) If we don't explicitly provide a destructor of its own then compiler enerates a default destructor for us.
+
+5) Destructor should be declared in the public section of class.
+
+6) can be static or const
+
+7) Programmer cannot access address of destructor.
+
+8)can be inherited.
+
+
+
+
+
+
+class area{
+	public:area(int);
+	~area(){
+		cout << "Object destroyed";
+	}
+};
+
+area::area(int r){
+	cout << "Area is : " << 3.14*(r*r);
+}
+
+
+int main(){
+	area obj = area(3);
+	retrun 0;
+}
+
+
+
+
+href="/watch?v=ErmT9uJbSw4&t=178s"
